@@ -1,0 +1,23 @@
+# CFMSProgramming
+public class FakeMotorEx implements DcMotorEx {
+private boolean motorEnable = true;
+
+private Map<RunMode, PIDCoefficients> pidCoefficients = new HashMap<>();
+
+private Map<RunMode, PIDFCoefficients> pidfCoefficients = new HashMap<>();
+
+private double motorPower;
+
+private int currentEncoderPosition;
+
+private int targetPositionTolerance;
+
+
+@Override
+public void setPower(double power) {
+  this.motorpower = power;
+}
+
+@Override
+public double getPower() {
+  returm motorPower
